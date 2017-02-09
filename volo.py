@@ -4,13 +4,16 @@ print "Determina la durata massima di volo conoscendo "
 print "la quantita' di carburante ed il consumo orario. "
 print 
 
-q = input("Carburante (in galloni): ")
-c = input("Consumo orario (in galloni/h): ")
+quantita = raw_input("Carburante (in galloni): ")
+consumo = raw_input("Consumo orario (in galloni/h): ")
+q = float(quantita)
+c = float(consumo)
+
 print
 print
 
 
-if q > c and q > 0 and c > 0:
+if  q > 0 and c > 0:
 
 	h = q/c
 	m = (float(h)-int(h))*60
